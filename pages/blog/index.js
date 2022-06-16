@@ -29,6 +29,7 @@ export default function Home({ data }) {
 
       <main className={styles.main}>
         {/* <h1 className={styles.title}>{data.contents.title}</h1> */}
+        <h1>Blog</h1>
         <section>
           {postList.map((post) => (
             <>
