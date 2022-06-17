@@ -1,6 +1,9 @@
 {
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.8.4",
     "dotenv": "^16.0.1",
     "microcms-js-sdk": "^2.0.0",
     "next": "latest",

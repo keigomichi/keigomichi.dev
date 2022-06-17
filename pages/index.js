@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import Button from "@mui/material/Button";
 
 export default function Home() {
   return (
@@ -16,7 +17,9 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://keigomichi.dev">keigomichi.dev!</a>
         </h1>
-        <Link href={"/blog"}>Blog</Link>
+        <Button variant="contained" passHref>
+          <Link href={"/blog"}>Blog</Link>
+        </Button>
 
         <p className={styles.description}>
           Get started by editing{" "}
