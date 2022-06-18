@@ -18,5 +18,8 @@
     "export": "next export",
     "prestart": "npm run export",
     "start": "serve out"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0"
   }
 }
