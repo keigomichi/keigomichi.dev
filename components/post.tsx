@@ -1,6 +1,14 @@
 // import Link from 'next/link'
 
-export default function Post({ title, content, id }) {
+export default function Post({
+  title,
+  content,
+  id,
+}: {
+  title: string;
+  content: string;
+  id: string;
+}) {
   return (
     <article>
       <h2>{title}</h2>
@@ -9,5 +17,5 @@ export default function Post({ title, content, id }) {
         <a>Read more...</a>
       </Link> */}
     </article>
-  )
+  );
 }
