@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import { client } from "../../libs/client";
-import { Post } from "../../components/post";
+// import { Post } from "../../components/post";
 
 export const getStaticProps = async () => {
   const data = await client.get({
@@ -15,7 +15,7 @@ export const getStaticProps = async () => {
   };
 };
 
-export default function Home({ data }) {
+export default function Home({ data }: { data: any }) {
   const postList = data.contents;
 
   return (
@@ -29,7 +29,7 @@ export default function Home({ data }) {
         {/* <h1 className={styles.title}>{data.contents.title}</h1> */}
         <h1>Blog</h1>
         <section>
-          {postList.map((post) => (
+          {postList.map((post: any) => (
             <>
               <h1>{post.title}</h1>
               <img src={`${post.eyecatch.url}`} />
