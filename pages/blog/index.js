@@ -16,14 +16,12 @@ export const getStaticProps = async () => {
 };
 
 export default function Home({ data }) {
-  // console.log(data);
-  // console.log(data.contents);
   const postList = data.contents;
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Blog | keigomichi</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
