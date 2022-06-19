@@ -27,8 +27,8 @@ export default function Home() {
           <div className={styles.header}>
             <img src="/icon_round.png" width={64} height={64} />
             <nav className={styles.header__item}>
-              <a href="https://twitter.com/keigomichi">Twitter</a>
-              <a href="https://github.com/keigomichi">GitHub</a>
+              <a href="https://twitter.com/keigomichi" target="_blank">Twitter</a>
+              <a href="https://github.com/keigomichi" target="_blank">GitHub</a>
             </nav>
           </div>
           <h1 className={styles.title}>Hi, I'm keigomichi</h1>
