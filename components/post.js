@@ -9,5 +9,5 @@ export default function Post({ title, content, id }) {
         <a>Read more...</a>
       </Link> */}
     </article>
-  )
+  );
 }
