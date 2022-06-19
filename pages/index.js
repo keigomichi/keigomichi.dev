@@ -24,9 +24,15 @@ export default function Home() {
       <div className={styles.contentWrapper}>
         {/* Description */}
         <container className={styles.container}>
-          <img src="/icon_round.png" width={64} height={64} />
-          <h1 className={styles.title}>keigomichi</h1>
-          <p className={styles.description}>
+          <div className={styles.header}>
+            <img src="/icon_round.png" width={64} height={64} />
+            <nav className={styles.header__item}>
+              <a href="https://twitter.com/keigomichi">Twitter</a>
+              <a href="https://github.com/keigomichi">GitHub</a>
+            </nav>
+          </div>
+          <h1 className={styles.title}>Hi, I'm keigomichi</h1>
+          <p className={`${styles.description} ${styles.border}`}>
             デザインとフロントエンドに興味がある大学2年生です。
             <br />
             このサイトは、私が所属しているサークルである
@@ -42,26 +48,24 @@ export default function Home() {
         {/* Works */}
         <container className={styles.container}>
           <h2 className={styles.subtitle}>Works</h2>
-          <div>
-            <div className={styles.works__wrapper}>
-              <div className={styles.works__item}>
-                <img src="/hicoder.png" width="100%" />
-                <span className={styles.works__title}>
-                  広島大学コンピュータサークル HiCoder 公式Webサイト
-                </span>
-                <p className={styles.description}>
-                  大学1年生のときに作ったはじめての作品。当時は割と思い通りのデザインに仕上がってうれしかった記憶があります。学んだばかりだったHTML・CSS(Sass)・JavaScriptで作りました。
-                </p>
-              </div>
-              <div className={styles.works__item}>
-                <img src="/revive.png" width="100%" />
-                <span className={styles.works__title}>
-                  株式会社Revive オンラインストア
-                </span>
-                <p className={styles.description}>
-                  高校時代の知人の知人の紹介で新しく会社をはじめる方のECサイトを制作しました。Shopifyのテンプレートをカスタマイズして作ったため、デザイン上の制約はありましたが、注文通りの雰囲気のサイトにできて喜んでいただけました。
-                </p>
-              </div>
+          <div className={styles.works__wrapper}>
+            <img src="/hicoder.png" width="100%" />
+            <div className={styles.works__content}>
+              <span className={styles.works__title}>
+                広島大学コンピュータサークル HiCoder 公式Webサイト
+              </span>
+              <p className={styles.works__description}>
+                大学1年生のときに作ったはじめての作品。当時は割と思い通りのデザインに仕上がってうれしかった記憶があります。学んだばかりだったHTML・CSS(Sass)・JavaScriptで作りました。作り直したい気持ちがあります。
+              </p>
+            </div>
+            <img src="/revive.png" width="100%" />
+            <div className={styles.works__content}>
+              <span className={styles.works__title}>
+                株式会社Revive オンラインストア
+              </span>
+              <p className={styles.works__description}>
+                高校時代の知人の知人の紹介で新しく会社をはじめる方のECサイトを制作しました。Shopifyのテンプレートをカスタマイズして作ったため、デザイン上の制約はありましたが、注文通りの雰囲気のサイトにできて喜んでいただけました。
+              </p>
             </div>
           </div>
         </container>
@@ -94,7 +98,7 @@ export default function Home() {
               >
                 <path d="M20.9 23H27.1V8.4Q27.1 7.1 26.2 6.2Q25.3 5.3 24 5.3Q22.7 5.3 21.8 6.175Q20.9 7.05 20.9 8.4ZM9.3 30.7H38.7V25.75Q38.7 25.25 38.35 24.9Q38 24.55 37.45 24.55H10.55Q10 24.55 9.65 24.9Q9.3 25.25 9.3 25.75ZM7.55 42.7H13.6V37.45Q13.6 37.15 13.825 36.925Q14.05 36.7 14.4 36.7Q14.75 36.7 14.95 36.925Q15.15 37.15 15.15 37.45V42.7H23.25V37.45Q23.25 37.15 23.475 36.925Q23.7 36.7 24 36.7Q24.35 36.7 24.55 36.925Q24.75 37.15 24.75 37.45V42.7H32.85V37.45Q32.85 37.15 33.075 36.925Q33.3 36.7 33.65 36.7Q33.95 36.7 34.175 36.925Q34.4 37.15 34.4 37.45V42.7H40.45Q41.05 42.7 41.425 42.225Q41.8 41.75 41.6 41.15L38.95 31.75H9.05L6.4 41.15Q6.2 41.75 6.575 42.225Q6.95 42.7 7.55 42.7ZM40.15 44.25H7.85Q6.4 44.25 5.475 43.075Q4.55 41.9 5 40.45L7.75 30.9V26Q7.75 24.75 8.625 23.875Q9.5 23 10.75 23H19.4V8.4Q19.4 6.45 20.75 5.1Q22.1 3.75 24 3.75Q25.9 3.75 27.25 5.1Q28.6 6.45 28.6 8.4V23H37.25Q38.5 23 39.375 23.875Q40.25 24.75 40.25 26V30.9L43 40.55Q43.4 41.95 42.5 43.1Q41.6 44.25 40.15 44.25ZM38.7 24.55H9.3Q9.3 24.55 9.65 24.55Q10 24.55 10.55 24.55H37.45Q38 24.55 38.35 24.55Q38.7 24.55 38.7 24.55ZM27.1 23H20.9Q20.9 23 21.8 23Q22.7 23 24 23Q25.3 23 26.2 23Q27.1 23 27.1 23Z" />
               </svg>
-              <span className={styles.interest__title}>片付け</span>
+              <span className={styles.interest__title}>掃除・片付け</span>
               <p className={styles.description}>
                 掃除・片付けが好きです。掃除なんかしても意味ない、時代はお掃除ロボットだとは思いますが、汚い部屋を綺麗にする、とても楽しいです。昔は、大改造ビフォーアフターを見るのが好きでした。デザインが好きなのもその延長線上にあるような気がします。
               </p>
@@ -110,8 +114,7 @@ export default function Home() {
               </svg>
               <span className={styles.interest__title}>ガジェット</span>
               <p className={styles.description}>
-                これは高校生のときが全盛期だったように思いますが、ガジェット好きの端くれもやっています。昨年は某家電量販店でクリスマスプレゼントのラッピングの短期バイトに取り組み、その際の給与でM1
-                PRO搭載の16インチMacBook
+                これは高校生のときが全盛期だったように思いますが、ガジェット好きの端くれもやっています。昨年は某家電量販店でクリスマスプレゼントのラッピングの短期バイトに取り組み、その際の給与所得で16インチMacBook
                 Proを購入しました。今はGoogle謹製のPixel
                 4a(5G)を使用していますが、PCがmacOSになったのでiPhoneも気になっています（Apple信者の皆さん、どうもこんにちは）。Lightning何とかしてくれ…。
               </p>
@@ -127,10 +130,15 @@ export default function Home() {
               </svg>
               <span className={styles.interest__title}>その他</span>
               <p className={styles.description}>
-                私はふとしたタイミングでドラマやアニメにハマります。昨年は、名探偵コナンや相棒、王様のレストランなどを見ていました。今年はウルトラマン・ウルトラセブンも見返すなどしています。
+                私はふとしたタイミングでドラマやアニメにハマります。昨年は、名探偵コナンや相棒、王様のレストランなどを見ていました。今年はウルトラマン・ウルトラセブンを見返すなどしています。
               </p>
             </div>
           </div>
+        </container>
+        {/* Blog */}
+        <container className={styles.container}>
+          <h2 className={styles.subtitle}>Posts</h2>
+          <p className={styles.description}>ただいま準備中です。</p>
         </container>
       </div>
       <footer className={styles.footer}>
