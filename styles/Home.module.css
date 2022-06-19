@@ -1,116 +1,84 @@
 .container {
-  padding: 0 2rem;
+  padding: 4rem 0 5rem;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.contentWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+  padding-top: 7rem;
 }
 
 .title {
+  margin-top: 0.8rem;
+  margin-bottom: 2.5rem;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 4.5rem 0 1.5rem 0;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.description {
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  font-size: 0.938rem;
+  line-height: 1.9;
 }
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
+.description a {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.2s;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.description a:hover {
+  color: #fff;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.works__wrapper {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.works__item {
+  display: grid;
+  gap: 1.5rem;
+  align-content: flex-start;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.works__title {
+  font-size: 0.938rem;
+  font-weight: 600;
+}
+.interest__wrapper {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.interest__item {
+  display: grid;
+  gap: 1rem;
+  align-content: flex-start;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.interest__title {
+  font-size: 0.938rem;
+  font-weight: 600;
+}
+
+.icon {
+  margin-top: 8px;
+  fill: rgba(242, 244, 255, 0.85);
 }
