@@ -97,7 +97,7 @@
 .footer {
   display: flex;
   flex: 1;
-  color: rgba(228,240,250,0.55);
+  color: rgba(228, 240, 250, 0.55);
   font-size: 0.75rem;
   padding: 2rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.257);
@@ -127,4 +127,13 @@
 
 .header__item a:hover {
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .works__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .interest__wrapper {
+    grid-template-columns: 1fr;
+  }
 }

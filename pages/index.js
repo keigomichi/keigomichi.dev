@@ -1,10 +1,7 @@
 import Head from "next/head";
+import styles from "../styles/Home.module.css";
 // import Image from "next/image";
 // import Link from "next/link";
-import styles from "../styles/Home.module.css";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-import ImageListItemBar from "@mui/material/ImageListItemBar";
 // import Button from "@mui/material/Button";
 
 export default function Home() {
@@ -27,8 +24,12 @@ export default function Home() {
           <div className={styles.header}>
             <img src="/icon_round.png" width={64} height={64} />
             <nav className={styles.header__item}>
-              <a href="https://twitter.com/keigomichi" target="_blank">Twitter</a>
-              <a href="https://github.com/keigomichi" target="_blank">GitHub</a>
+              <a href="https://twitter.com/keigomichi" target="_blank">
+                Twitter
+              </a>
+              <a href="https://github.com/keigomichi" target="_blank">
+                GitHub
+              </a>
             </nav>
           </div>
           <h1 className={styles.title}>Hi, I'm keigomichi</h1>
@@ -36,7 +37,9 @@ export default function Home() {
             デザインとフロントエンドに興味がある大学2年生です。
             <br />
             このサイトは、私が所属しているサークルである
-            <a href="https://hicoder.one">HiCoder</a>
+            <a href="https://hicoder.one" target="_blank">
+              HiCoder
+            </a>
             のハッカソン企画に出品する作品として制作されました。
             <br />
             Next.jsでSSGされ、Cloudflare Pagesを使って配信されています。
