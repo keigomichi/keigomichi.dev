@@ -32,7 +32,7 @@ export default function Home() {
               </a>
             </nav>
           </div>
-          <h1 className={styles.title}>Hi, I'm keigomichi</h1>
+          <h1 className={styles.title}>keigomichi.dev</h1>
           <p className={`${styles.description} ${styles.border}`}>
             デザインとフロントエンドに興味がある大学2年生です。
             <br />
